@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RPG Dice</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>RPG dice</h1>
+  </header>
+  <main>
+    <div id="buttons">
+      <button class='dice' value="4">k4</button>
+      <button class='dice' value="6">k6</button>
+      <button class='dice' value="8">k8</button>
+      <button class='dice' value="10">k10</button>
+      <button class='dice' value="12">k12</button>
+      <button class='dice' value="20">k20</button>
+      <button class='dice' value="100">k100</button>
+    </div>
+    <div id='texts'>
+      <h2 id="result">
+      </h2>
+      <div>
+        <h2>Latest rolls</h2>
+        <ul id="history">
+        </ul>
+        <button type="button" name="clearHistory" id='clearHistory'>Clear</button>
+      </div>
+    </div>
+  </main>
+
+<script type="text/javascript" src="main.js">
+</script>
+</body>
+</html>

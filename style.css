@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #2c3e50;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+header h1{
+  margin: 10vh auto 5vh auto;
+  text-align: center;
+  border-bottom: 1px solid black;
+  color: #bdc3c7;
+  font-size: 2rem;
+}
+
+#buttons {
+  margin: 3vh 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media(min-width: 768px) {
+  #buttons {
+    width: 80%;
+    margin: 5vh auto;
+  }
+  #texts {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media(min-width: 1025px) {
+  #buttons {
+    width: 50%;
+    margin: 5vh auto;
+  }
+  #texts {
+    margin: auto;
+    width: 50%;
+    justify-content: space-around;
+  }
+}
+
+.dice {
+  cursor: pointer;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #e67e22;
+  color: #2c3e50;
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  border: none;
+  transition: all 0.5s;
+}
+
+.dice:hover {
+  transform: scale(1.1);
+}
+
+#texts {
+  margin: auto;
+  color: #bdc3c7;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+#result {
+  color: #bdc3c7;
+  font-size: 22px;
+  line-height: 22px;
+  width: 59%;
+  padding-left: 2rem;
+}
+
+#texts div {
+  width: 40%;
+  text-align: center;
+  color: #bdc3c7;
+  list-style: none;
+  max-height: 300px;
+}
+/* 
+#texts div h2 {
+  text-align: left;
+} */
+
+#clearHistory {
+  cursor: pointer;
+  background: rgba(52,152,219 ,1);
+  border: none;
+}
+
+#history li {
+  text-align: left;
+  margin-top: 0.5rem;
+  list-style: none;
+}
